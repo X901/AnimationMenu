@@ -7,20 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FD2AA4E81E901B1800A9BE96 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD2AA4E71E901B1800A9BE96 /* RoundButton.swift */; };
 		FDB075611E8ECA6F00AB9FFB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB075601E8ECA6F00AB9FFB /* AppDelegate.swift */; };
 		FDB075631E8ECA6F00AB9FFB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB075621E8ECA6F00AB9FFB /* ViewController.swift */; };
 		FDB075661E8ECA6F00AB9FFB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDB075641E8ECA6F00AB9FFB /* Main.storyboard */; };
-		FDB075691E8ECA6F00AB9FFB /* AnimationMenu.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FDB075671E8ECA6F00AB9FFB /* AnimationMenu.xcdatamodeld */; };
 		FDB0756B1E8ECA6F00AB9FFB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDB0756A1E8ECA6F00AB9FFB /* Assets.xcassets */; };
 		FDB0756E1E8ECA6F00AB9FFB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDB0756C1E8ECA6F00AB9FFB /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FD2AA4E71E901B1800A9BE96 /* RoundButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 		FDB0755D1E8ECA6F00AB9FFB /* AnimationMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimationMenu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDB075601E8ECA6F00AB9FFB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FDB075621E8ECA6F00AB9FFB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FDB075651E8ECA6F00AB9FFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		FDB075681E8ECA6F00AB9FFB /* AnimationMenu.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AnimationMenu.xcdatamodel; sourceTree = "<group>"; };
 		FDB0756A1E8ECA6F00AB9FFB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FDB0756D1E8ECA6F00AB9FFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FDB0756F1E8ECA6F00AB9FFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -58,11 +58,11 @@
 			children = (
 				FDB075601E8ECA6F00AB9FFB /* AppDelegate.swift */,
 				FDB075621E8ECA6F00AB9FFB /* ViewController.swift */,
+				FD2AA4E71E901B1800A9BE96 /* RoundButton.swift */,
 				FDB075641E8ECA6F00AB9FFB /* Main.storyboard */,
 				FDB0756A1E8ECA6F00AB9FFB /* Assets.xcassets */,
 				FDB0756C1E8ECA6F00AB9FFB /* LaunchScreen.storyboard */,
 				FDB0756F1E8ECA6F00AB9FFB /* Info.plist */,
-				FDB075671E8ECA6F00AB9FFB /* AnimationMenu.xcdatamodeld */,
 			);
 			path = AnimationMenu;
 			sourceTree = "<group>";
@@ -140,8 +140,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD2AA4E81E901B1800A9BE96 /* RoundButton.swift in Sources */,
 				FDB075631E8ECA6F00AB9FFB /* ViewController.swift in Sources */,
-				FDB075691E8ECA6F00AB9FFB /* AnimationMenu.xcdatamodeld in Sources */,
 				FDB075611E8ECA6F00AB9FFB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -306,21 +306,9 @@
 				FDB075741E8ECA6F00AB9FFB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		FDB075671E8ECA6F00AB9FFB /* AnimationMenu.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				FDB075681E8ECA6F00AB9FFB /* AnimationMenu.xcdatamodel */,
-			);
-			currentVersion = FDB075681E8ECA6F00AB9FFB /* AnimationMenu.xcdatamodel */;
-			path = AnimationMenu.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = FDB075551E8ECA6F00AB9FFB /* Project object */;
 }

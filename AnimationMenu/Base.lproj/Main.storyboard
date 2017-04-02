@@ -1,14 +1,18 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AnimationMenu" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +20,213 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RPV-Wv-B5M">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vNz-OP-Bfx" customClass="RoundButton" customModule="AnimationMenu">
+                                        <rect key="frame" x="293" y="589" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.094240538775920868" green="0.097942940890789032" blue="0.15285941958427429" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="25"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yOw-vR-uPj">
+                                        <rect key="frame" x="153" y="580" width="68" height="68"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="Close"/>
+                                        <connections>
+                                            <action selector="closeClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ufL-mT-V8c"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RKo-rZ-8kW">
+                                        <rect key="frame" x="284" y="580" width="68" height="68"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="Menu"/>
+                                        <connections>
+                                            <action selector="menuClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="n4D-k4-LvP"/>
+                                        </connections>
+                                    </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Menu Bar" translatesAutoresizingMaskIntoConstraints="NO" id="9dX-ib-NBF">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="65"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="65" id="85X-yB-5ZQ"/>
+                                        </constraints>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="0dY-l6-ngc">
+                                        <rect key="frame" x="47" y="179" width="278" height="311"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="KLd-cC-78Y">
+                                                <rect key="frame" x="0.5" y="0.0" width="277.5" height="204"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="80o-ob-4tQ">
+                                                        <rect key="frame" x="0.0" y="0.0" width="277.5" height="92"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="DeD-7D-tIs">
+                                                                <rect key="frame" x="0.0" y="0.0" width="73.5" height="92"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0eb-Ub-B65">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="73.5" height="72"/>
+                                                                        <state key="normal" image="Messenger-Off"/>
+                                                                    </button>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Messenger" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="35T-ib-UGA">
+                                                                        <rect key="frame" x="0.0" y="72" width="73.5" height="20"/>
+                                                                        <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="17"/>
+                                                                        <color key="textColor" red="0.81177830696105957" green="0.81175428628921509" blue="0.83907550573348999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="bBM-po-Lao">
+                                                                <rect key="frame" x="103.5" y="0.0" width="72" height="92"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b2c-SA-8G5">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="72" height="72"/>
+                                                                        <state key="normal" image="Deals-On"/>
+                                                                    </button>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Deals" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oQh-NV-dSa">
+                                                                        <rect key="frame" x="16.5" y="72" width="38.5" height="20"/>
+                                                                        <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="17"/>
+                                                                        <color key="textColor" red="0.81177830699999998" green="0.81175428630000002" blue="0.8390755057" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Rsf-Cx-0bS">
+                                                                <rect key="frame" x="205.5" y="0.0" width="72" height="92"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RpR-gk-tbq">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="72" height="72"/>
+                                                                        <state key="normal" image="Status-Off"/>
+                                                                    </button>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Status" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k36-VV-6YC">
+                                                                        <rect key="frame" x="0.0" y="72" width="72" height="20"/>
+                                                                        <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="17"/>
+                                                                        <color key="textColor" red="0.81177830699999998" green="0.81175428630000002" blue="0.8390755057" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="jGx-Zj-a0P">
+                                                        <rect key="frame" x="0.0" y="112" width="277.5" height="92"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ja6-aT-m13">
+                                                                <rect key="frame" x="0.0" y="0.0" width="73.5" height="92"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleAspectFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sSi-rI-Be9">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="73.5" height="72"/>
+                                                                        <state key="normal" image="Friends-Off"/>
+                                                                    </button>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Friends" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZVP-qg-wYW">
+                                                                        <rect key="frame" x="0.0" y="72" width="73.5" height="20"/>
+                                                                        <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="17"/>
+                                                                        <color key="textColor" red="0.81177830699999998" green="0.81175428630000002" blue="0.8390755057" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="nzW-KB-ugy">
+                                                                <rect key="frame" x="103.5" y="0.0" width="72" height="92"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleAspectFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jYt-eh-x60">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="72" height="72"/>
+                                                                        <state key="normal" image="Rewards-Off"/>
+                                                                    </button>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Rewards" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bwU-Am-zXa">
+                                                                        <rect key="frame" x="0.0" y="72" width="72" height="20"/>
+                                                                        <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="17"/>
+                                                                        <color key="textColor" red="0.81177830699999998" green="0.81175428630000002" blue="0.8390755057" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="jZU-Q1-D4X">
+                                                                <rect key="frame" x="205.5" y="0.0" width="72" height="92"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleAspectFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1s6-r2-Glg">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="72" height="72"/>
+                                                                        <state key="normal" image="Payment-Off"/>
+                                                                    </button>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Payment" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wnm-aD-nyc">
+                                                                        <rect key="frame" x="0.0" y="72" width="72" height="20"/>
+                                                                        <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="17"/>
+                                                                        <color key="textColor" red="0.81177830699999998" green="0.81175428630000002" blue="0.8390755057" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="hOn-UO-Klj">
+                                                <rect key="frame" x="103" y="219" width="72" height="92"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kmc-X5-Nsp">
+                                                        <rect key="frame" x="0.0" y="0.0" width="72" height="72"/>
+                                                        <state key="normal" image="Calendar-Off"/>
+                                                    </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calendar" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zSf-I6-vt9">
+                                                        <rect key="frame" x="0.0" y="72" width="72" height="20"/>
+                                                        <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="17"/>
+                                                        <color key="textColor" red="0.81177830699999998" green="0.81175428630000002" blue="0.8390755057" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="0dY-l6-ngc" secondAttribute="trailing" constant="50.25" id="M9c-wS-Arb"/>
+                                    <constraint firstItem="9dX-ib-NBF" firstAttribute="top" secondItem="RPV-Wv-B5M" secondAttribute="top" id="evV-u2-snY"/>
+                                    <constraint firstItem="0dY-l6-ngc" firstAttribute="top" secondItem="9dX-ib-NBF" secondAttribute="bottom" constant="114" id="l0z-kP-o1W"/>
+                                    <constraint firstAttribute="trailing" secondItem="9dX-ib-NBF" secondAttribute="trailing" id="lTG-Gg-C0b"/>
+                                    <constraint firstItem="0dY-l6-ngc" firstAttribute="leading" secondItem="RPV-Wv-B5M" secondAttribute="leading" constant="46.75" id="nok-c2-Fpy"/>
+                                    <constraint firstItem="9dX-ib-NBF" firstAttribute="leading" secondItem="RPV-Wv-B5M" secondAttribute="leading" id="w1U-6t-VRn"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="RPV-Wv-B5M" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="LLo-d1-0uv"/>
+                            <constraint firstItem="RPV-Wv-B5M" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="SIS-CS-uDb"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="RPV-Wv-B5M" secondAttribute="bottom" id="e09-Ui-pmN"/>
+                            <constraint firstAttribute="trailing" secondItem="RPV-Wv-B5M" secondAttribute="trailing" id="m0a-9l-KFH"/>
+                        </constraints>
                     </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <connections>
+                        <outlet property="Close" destination="yOw-vR-uPj" id="gof-RK-aNi"/>
+                        <outlet property="MenuButtonTop" destination="l0z-kP-o1W" id="TsD-b7-Z31"/>
+                        <outlet property="backgroundMenuView" destination="RPV-Wv-B5M" id="FQ6-Q2-mFh"/>
+                        <outlet property="darkFillView" destination="vNz-OP-Bfx" id="VJi-ll-PnT"/>
+                        <outlet property="menu" destination="RKo-rZ-8kW" id="llq-JB-hZk"/>
+                        <outlet property="menuButtons" destination="0dY-l6-ngc" id="Zna-uo-yjk"/>
+                        <outlet property="topConatraint" destination="evV-u2-snY" id="yI9-fo-r9Z"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="137.18140929535232"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Calendar-Off" width="72" height="72"/>
+        <image name="Close" width="82" height="82"/>
+        <image name="Deals-On" width="72" height="72"/>
+        <image name="Friends-Off" width="72" height="72"/>
+        <image name="Menu" width="82" height="82"/>
+        <image name="Menu Bar" width="374" height="65"/>
+        <image name="Messenger-Off" width="72" height="72"/>
+        <image name="Payment-Off" width="72" height="72"/>
+        <image name="Rewards-Off" width="72" height="72"/>
+        <image name="Status-Off" width="72" height="72"/>
+    </resources>
 </document>
