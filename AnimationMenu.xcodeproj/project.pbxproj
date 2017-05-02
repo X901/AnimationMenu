@@ -99,7 +99,6 @@
 				TargetAttributes = {
 					FDB0755C1E8ECA6F00AB9FFB = {
 						CreatedOnToolsVersion = 8.3;
-						DevelopmentTeam = CP92CMD5E4;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -265,7 +264,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = CP92CMD5E4;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = AnimationMenu/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Basil.Baragabah.AnimationMenu;
@@ -278,7 +277,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = CP92CMD5E4;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = AnimationMenu/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Basil.Baragabah.AnimationMenu;
